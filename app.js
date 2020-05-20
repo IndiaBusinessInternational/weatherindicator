@@ -1,5 +1,4 @@
-// Tutorial by http://youtube.com/CodeExplained
-// api key : 82005d27a116c2880c8f0fcb866998a0
+// my api key : 82005d27a116c2880c8f0fcb866998a0
 
 // SELECT ELEMENTS
 const iconElement = document.querySelector(".weather-icon");
@@ -18,7 +17,7 @@ weather.temperature = {
 // APP CONSTS AND VARS
 const KELVIN = 273;
 // API KEY
-const key = "82005d27a116c2880c8f0fcb866998a0";
+const key = "f1504a5c4ad4cb46865774508f108b12";
 
 // CHECK IF BROWSER SUPPORTS GEOLOCATION
 if('geolocation' in navigator){
@@ -32,7 +31,7 @@ if('geolocation' in navigator){
 function setPosition(position){
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
-    
+
     getWeather(latitude, longitude);
 }
 
@@ -45,7 +44,7 @@ function showError(error){
 // GET WEATHER FROM API PROVIDER
 function getWeather(latitude, longitude){
     let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
-    
+
     fetch(api)
         .then(function(response){
             let data = response.json();
@@ -79,11 +78,11 @@ function celsiusToFahrenheit(temperature){
 // WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENET
 tempElement.addEventListener("click", function(){
     if(weather.temperature.value === undefined) return;
-    
+
     if(weather.temperature.unit == "celsius"){
         let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
         fahrenheit = Math.floor(fahrenheit);
-        
+
         tempElement.innerHTML = `${fahrenheit}°<span>F</span>`;
         weather.temperature.unit = "fahrenheit";
     }else{
@@ -91,4 +90,3 @@ tempElement.addEventListener("click", function(){
         weather.temperature.unit = "celsius"
     }
 });
-
