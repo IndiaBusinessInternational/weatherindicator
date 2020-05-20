@@ -1,0 +1,184 @@
+/* color stocks */
+:root {
+  --greenfromw3s: #4CAF50;
+  --matchboxcolorfromgetbootstrap: #7952b3;
+  --sienna: #a0522d;
+  --brown: #a52a2a;
+  --niceRed: #b2175b;
+  --indianred: #cd5c5c;
+  --mediumvioletred: #c71585;
+  --palevioletred: #db7093;
+  --hotpink: 	#ff69b4;
+  --darkgreen: #006400;
+  --forestgreen: 	#228b22;
+  --teal: #008080;
+  --chocolate : #d2691e;
+  --darkmagenta: #8b008b;
+  --dodgerblue: #1e90ff;
+  --royalblue: 	#4169e1;
+  --steelblue: 	#4682b4;
+  --mediumslateblue: #7b68ee;
+  --cornflowerblue : #6495ed;
+  --mediumorchid: #ba55d3;
+  --orchid: #da70d6;
+  --rebeccapurple: #663399;
+  --mediumpurple: 	#9370db;
+  --peru: #cd853f;
+  --goldenrod: #daa520;
+  --darksalmon: #e9967a;
+  --thistle: #d8bfd8;
+  --rosybrown: #bc8f8f;
+  --cornsilk : #fff8dc;
+  --tan: #D2B48C;
+  --saddlebrown: #8B4513;
+  --rosybrown: #BC8F8F;
+  --colorBrown: #e08b6c;
+  --ghostwhite: #F8F8FF;
+  --whitesmoke: #f5f5f5;
+  --floralwhite: #F8F8FF;
+  --gainsboro: #DCDCDC;
+  --lightgrey: #D3D3D3;
+  --white: #FFFFFF;
+  --black: #000000;
+  --DarkSlateGrey: #2F4F4F;
+  --dimgray: #696969;
+  --slategrey: #708090;
+  --gray: #808080;
+  --darkgrey: #a9a9a9;
+  --silver: #C0C0C0;
+  --seashell: #FFF5EE;
+  --transparentBlue: rgba(0,0,255,0.3);
+  --niceBlue: #3c1b75;
+}
+/* end of colors stock */
+
+
+*{
+    font-family: "Rimouski";
+}
+
+body{
+    background-color: #292929;
+}
+
+.container{
+    width: 450px;
+    background: #D2B48C;
+    color: #fff;
+
+    display: block;
+    margin: 0 auto;
+
+    border-radius: 10px;
+    padding : 10px;
+}
+
+.app-title{
+    width: 450px;
+    height: 100px;
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.notification{
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p{
+    color: #721c24;
+    background: #fff;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather-container{
+    width: 450px;
+    height: 260px;
+    align-items: center;
+    justify-content: center;
+    background-color: #D2B48C;
+}
+
+.weather-icon{
+    width: 450px;
+    height: 128px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value{
+    width: 450px;
+    height:60px;
+    margin: 10px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: #7952b3;
+    font-size: 4rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value p:hover{
+  color: #000000;
+  font-size: 2rem;
+  transition: all 2s ease-in-out;
+}
+
+.temperature-value span{
+    color: #293251;
+    font-size: 0.5em;
+}
+
+.temperature-description{
+
+}
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+    color: #b2175b;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.location{
+
+}
+
+.location p{
+    margin: 0;
+    padding: 0;
+    color: #4CAF50;
+    text-align: center;
+    font-size: 1rem;
+}
+.poweredby span {
+  justify-content: space-around !important;
+}
+.poweredby p {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: #000000;
+}
+.poweredby a {
+  font-size: 1rem;
+  text-decoration: none;
+}
