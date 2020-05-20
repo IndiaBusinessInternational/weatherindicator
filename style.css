@@ -62,7 +62,7 @@ body{
 }
 
 .container{
-    min-height: 90vh;
+    width: 360px;
     background: #D2B48C;
     color: #fff;
 
