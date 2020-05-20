@@ -62,7 +62,7 @@ body{
 }
 
 .container{
-    width: 450px;
+    min-height: 90vh;
     background: #D2B48C;
     color: #fff;
 
@@ -74,7 +74,7 @@ body{
 }
 
 .app-title{
-    width: 450px;
+    width: 100%;
     height: 100px;
     border-radius: 10px 10px 0 0;
     justify-content: center;
@@ -104,7 +104,7 @@ body{
 }
 
 .weather-container{
-    width: 450px;
+    width: 100%;
     height: 260px;
     align-items: center;
     justify-content: center;
@@ -112,7 +112,7 @@ body{
 }
 
 .weather-icon{
-    width: 450px;
+    width: 100%;
     height: 128px;
 }
 
@@ -122,7 +122,7 @@ body{
 }
 
 .temperature-value{
-    width: 450px;
+    width: 100%;
     height:60px;
     margin: 10px;
 }
@@ -170,9 +170,12 @@ body{
     text-align: center;
     font-size: 1rem;
 }
-.poweredby span {
-  justify-content: space-around !important;
+.poweredby p, span, a {
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
 }
+
 .poweredby p {
   font-size: 0.7rem;
   text-decoration: none;
