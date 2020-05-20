@@ -74,7 +74,7 @@ body{
 }
 
 .app-title{
-    width: 100%;
+    width: 360px;
     height: 100px;
     border-radius: 10px 10px 0 0;
     justify-content: center;
@@ -104,7 +104,7 @@ body{
 }
 
 .weather-container{
-    width: 100%;
+    width: 360px;
     height: 260px;
     align-items: center;
     justify-content: center;
@@ -112,7 +112,7 @@ body{
 }
 
 .weather-icon{
-    width: 100%;
+    width: 360px;
     height: 128px;
 }
 
@@ -122,7 +122,7 @@ body{
 }
 
 .temperature-value{
-    width: 100%;
+    width: 360px;
     height:60px;
     margin: 10px;
 }
